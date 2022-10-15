@@ -9,7 +9,7 @@ html {
 }
 
 body {
-    font-family: Arial, 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
 }
 
@@ -21,16 +21,32 @@ body {
 
 /* ====== HEADER ===== */
 
-#navbar {
+header {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    display: flex;
-    justify-content: end;
-    background: var(--clr-main-red);
     font-size: 1.3rem;
     box-shadow: 2px 0px 5px #1f1f1f;
+    background: var(--clr-main-red);
+}
+
+header p {
+    align-self: center;
+    margin-left: 2rem;
+}
+
+header p a {
+ /* color: var(--clr-main-body); */
+ color: aquamarine;
+ font-weight: bold;
+}
+
+#navbar {
+    display: flex;
+    /* justify-content: end; */
 }
 
 #navbar ul {
