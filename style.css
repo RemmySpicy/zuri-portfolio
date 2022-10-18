@@ -62,12 +62,17 @@ a {
 .about {
     background: radial-gradient(rgb(58, 58, 58), rgb(27, 27, 27));
     height: 100vh;
-    min-width: 100%;
-    padding-top: 10rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.container {
+    width: 75rem;
+    margin: 0 auto;
 }
 
 .about h1 {
@@ -82,12 +87,24 @@ a {
     font-style: italic;
 }
 
+
+.about ul {
+    list-style: none;
+    margin-top: 4rem;
+}
+
+.about ul li {
+    margin-bottom: 2rem;
+}
+
+.about ul p {
+    font-size: 1rem;
+}
+
 .details {
     display: flex;
     justify-content: space-between;
-    /* max-height: 60%; */
-    max-width: 75rem;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .details h3 {
@@ -96,18 +113,42 @@ a {
 
 .left {
     text-align: left;
+    width: 20rem;
 }
 
-.about ul {
-    list-style: none;
+/* center */
+
+.center {
+    max-height: 100%;
+    width: 20rem;
+    margin-inline: 2rem;
+    background-color: var(--clr-main-red);
+    background-image: url(spicy.jpg);
+    background-size: cover;
+    background-position: -5em;
+    border-radius: 10rem;
+    overflow: hidden;
+
+    outline: 2px solid var(--clr-main-red);
+    outline-offset: 1rem;
 }
 
-.about ul p {
-    font-size: 1rem;
+.center img {
+    height: 100%;
 }
 
-.left ul li {
-    margin-bottom: 2rem;
+
+/* right */
+
+.right {
+    width: 20rem;
+    text-align: right;
+}
+
+.right span {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--clr-main-red);
 }
 
 
