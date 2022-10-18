@@ -59,9 +59,9 @@ a {
 
 /* =====  WELCOME ===== */
 
-.about {
+#about {
     background: radial-gradient(rgb(58, 58, 58), rgb(27, 27, 27));
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 6rem;
     padding-bottom: 4rem;
     text-align: center;
@@ -75,12 +75,12 @@ a {
     margin: 0 auto;
 }
 
-.about h1 {
+#about h1 {
     font-size: 4rem;
     margin: 0;
 }
 
-.about p {
+#about p {
     color: var(--clr-main-red);
     font-size: 2rem;
     margin: 0;
@@ -88,16 +88,16 @@ a {
 }
 
 
-.about ul {
+#about ul {
     list-style: none;
     margin-top: 4rem;
 }
 
-.about ul li {
+#about ul li {
     margin-bottom: 2rem;
 }
 
-.about ul p {
+#about ul p {
     font-size: 1rem;
 }
 
@@ -280,14 +280,14 @@ footer {
     background: var(--clr-main-dark);
     color: white;
     text-align: center;
-    height: 80vh;
+    height: 85vh;
 }
 
 .contact {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 84%;
+    height: calc(100% - 5.6rem);
 }
 
 .contact h3 {
@@ -337,7 +337,7 @@ hr {
 
 
 .copyright {
-    height: 15%;
+    /* height: 20rem; */
     display: flex;
     justify-content: space-evenly;
     text-align: left;
