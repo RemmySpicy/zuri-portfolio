@@ -75,6 +75,14 @@ a {
     margin: 0 auto;
 }
 
+
+@media (max-width: 1230px) {
+    .container{
+        width: 100%;
+        padding-inline: 1rem;
+    }      
+}
+
 #about h1 {
     font-size: 4rem;
     margin: 0;
@@ -157,8 +165,7 @@ a {
 #work {
     background: var(--clr-main-body);
     text-align: center;
-    padding-top: 1rem;
-    padding-inline: 1rem;
+    padding: 1rem;
 }
 
 .projects-header {
