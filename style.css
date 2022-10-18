@@ -23,7 +23,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     position: fixed;
     top: 0;
     left: 0;
@@ -33,20 +33,8 @@ header {
     background: var(--clr-main-red);
 }
 
-header p {
-    align-self: center;
-    margin-left: 2rem;
-}
-
-header p a {
- /* color: var(--clr-main-body); */
- color: aquamarine;
- font-weight: bold;
-}
-
 #navbar {
     display: flex;
-    /* justify-content: end; */
 }
 
 #navbar ul {
@@ -71,25 +59,55 @@ a {
 
 /* =====  WELCOME ===== */
 
-#welcome-section {
+.about {
     background: radial-gradient(rgb(58, 58, 58), rgb(27, 27, 27));
     height: 100vh;
     min-width: 100%;
+    padding-top: 10rem;
     text-align: center;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-#about h1 {
+.about h1 {
     font-size: 4rem;
     margin: 0;
 }
 
-#about p {
+.about p {
     color: var(--clr-main-red);
     font-size: 2rem;
     margin: 0;
     font-style: italic;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    /* max-height: 60%; */
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.details h3 {
+    font-size: 1rem;
+}
+
+.left {
+    text-align: left;
+}
+
+.about ul {
+    list-style: none;
+}
+
+.about ul p {
+    font-size: 1rem;
+}
+
+.left ul li {
+    margin-bottom: 2rem;
 }
 
 
@@ -221,22 +239,27 @@ footer {
     background: var(--clr-main-dark);
     color: white;
     text-align: center;
+    height: 80vh;
 }
 
-#contact {
-    padding: 5.5rem;
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84%;
 }
 
-h3 {
-    font-size: 3.5rem
+.contact h3 {
+    font-size: 3.5rem;
+    line-height: 2;
 }
 
 em {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: var(--clr-main-red);
 }
 
-#contact-links {
+.contact-links {
     text-shadow: 2px 2px 1px #1f1f1f;
 }
 
@@ -251,7 +274,7 @@ hr {
     height: 4px;
 }
 
-#contact ul {
+.contact ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -260,19 +283,20 @@ hr {
     margin: 1.2rem;
 }
 
-#contact ul a {
+.contact ul a {
     padding: 0.8rem;
     display: flex;
     place-items: center;
     transition: 300ms ease;
 }
 
-#contact ul a:hover {
+.contact ul a:hover {
     transform: translateY(0.8rem);
 }
 
 
-#copyright {
+.copyright {
+    height: 15%;
     display: flex;
     justify-content: space-evenly;
     text-align: left;

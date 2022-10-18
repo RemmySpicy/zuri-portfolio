@@ -14,7 +14,6 @@
    
 
 <header>
-    <p>Apologies for submitting the wrong link, I learned late. view my code <a href="">here</a></p>
     <nav id="navbar">
             <ul class="nav-link">
                 <a href="#about"><li class="nav-list">About</li></a>
@@ -25,50 +24,112 @@
     </header>
 
     <main>
-        <div id="about">
-            <section id="welcome-section">
+        <section class="about">
+            <div>
                 <h1>Hey, I am Spicy</h1>
                 <p>a web developer</p>
-            </section>
-        </div>
+            </div>
+
+            <div class="details">
+                <div class="left">
+                    <ul>
+                        <li>
+                            <h3>BIOGRAPHY</h3>
+                            <p>Work with passion, design for love, and love the money!</p>
+                            <p>I am Remilekun, a web developer and UI/UX designer based in Nigeria</p>
+                        </li>
+
+                        <li>
+                            <h3>Services</h3>
+                            <p>Website design</p>
+                            <p>Website development</p>
+                            <p>Backend Engineering</p>
+                        </li>
+
+                        <li>
+                            <h3>Hobbies</h3>
+                            <p>Swimming</p>
+                            <p>Gaming</p>
+                            <p>Humanitarian Services</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="center">
+                    <img src="" alt="A picture of Spicy">
+                </div>
+
+                <div class="right">
+                    <ul>
+                        <li>
+                            <h3>YEARS OF EXPERIENCE</h3>
+                            <span>1</span>
+                        </li>
+
+                        <li>
+                            <h3>CLIENTS SATISFACTION</h3>
+                            <span>100%</span>
+                        </li>
+
+                        <li>
+                            <h3>INTERNATIONAL CLIENTS</h3>
+                            <span>7+</span>
+                        </li>
+
+                        <li>
+                            <h3>PROJECTS DONE</h3>
+                            <span>32</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section>
+            <div>
+                <img src="" alt="">
+                <h2>About Me</h2>
+                <p>I'm this and that</p>
+            </div>
+        </section> -->
 
         <section id="work">
-            <h2 class="projects-header">These are some of my projects</h2>
+            <h2 class="projects-header">These are (not) some of my projects</h2>
             <div id="projects">
                 <div class="project-tile">
                     <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">
                         <div class="img tribute"></div>
-                        <p><span class="code">< </span>Tribute Page<span class="code"> /></span></p>
+                        <p><span class="code">&lt; </span>Tribute Page<span class="code"> /&gt;</span></p>
                     </a>
                 </div>
                 <div class="project-tile">
                     <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ">
                         <div class="img quote"></div>
-                        <p><span class="code">< </span>Random Quote Machine<span class="code"> /></span></p>
+                        <p><span class="code">&lt; </span>Random Quote Machine<span class="code"> /&gt;</span></p>
                     </a>
                 </div>
                 <div class="project-tile">
                     <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">
                         <div class="img calc"></div>
-                        <p><span class="code">< </span>JavaScript Calculator<span class="code"> /></span></p>
+                        <p><span class="code">&lt; </span>JavaScript Calculator<span class="code"> /&gt;</span></p>
                     </a>
                 </div>
                 <div class="project-tile">
                     <a href="https://codepen.io/freeCodeCamp/full/mVEJag">
                         <div class="img map"></div>
-                        <p><span class="code">< </span>Map Data Across the Globe<span class="code"> /></Globespan></p>
+                        <p><span class="code">&lt; </span>Map Data Across the Globe<span class="code"> /&gt;</Globespan></p>
                     </a>
                 </div>
                 <div class="project-tile">
                     <a class="project-link" href="https://codepen.io/freeCodeCamp/full/wGqEga">
                         <div class="img wiki"></div>
-                        <p class="project-title"><span class="code">< </span>Wikipedia Viewer<span class="code"> /></span></p>
+                        <p class="project-title"><span class="code">&lt; </span>Wikipedia Viewer<span class="code"> /&gt;</span></p>
                     </a>
                 </div>
                 <div class="project-tile">
                     <a class="project-link" href="https://codepen.io/freeCodeCamp/full/KzXQgy">
                         <div class="img game"></div>
-                        <p><span class="code">< </span>Tic Tac Toe Game<span class="code"> /></span></p>
+                        <p><span class="code">&lt; </span>Tic Tac Toe Game<span class="code"> /&gt;</span></p>
                     </a>
                 </div>
             </div>
@@ -76,19 +137,21 @@
         </section>
     </main>
     <footer>
-        <div id="contact">
-            <h3>Let's work together...</h3>
-            <em>How do you take your coffee?</em>
-            <ul id="contact-links">
-                <a href="https://facebook.com/freecodecamp" target="_blank"><i class="fa-brands fa-facebook-square"></i><li>Facebook</li></a>
-                <a id="profile-link" href="https://github.com/freecodecamp" target="_blank"><i class="fab fa-github"></i><li>GitHub</li></a>
-                <a href="https://twitter.com/freecodecamp" target="_blank"><li><i class="fa-brands fa-twitter"></i>Tweeter</li></a>
-                <a href="example@example.com" target="_"><li><i class="fa-solid fa-at"></i>Send a mail</li></a>
-                <a href="tel:555-555-5555" target="_blank"><li><i class="fa-solid fa-mobile-screen-button"></i>Call me</li></a>
-            </ul>
+        <div class="contact" id="contact">
+            <div>
+                <h3>Let's work together...</h3>
+                <em>How do you take your coffee?</em>
+                <ul id="contact-links">
+                    <a href="https://facebook.com/freecodecamp" target="_blank"><i class="fa-brands fa-facebook-square"></i><li>Facebook</li></a>
+                    <a id="profile-link" href="https://github.com/freecodecamp" target="_blank"><i class="fab fa-github"></i><li>GitHub</li></a>
+                    <a href="https://twitter.com/freecodecamp" target="_blank"><li><i class="fa-brands fa-twitter"></i>Tweeter</li></a>
+                    <a href="example@example.com" target="_"><li><i class="fa-solid fa-at"></i>Send a mail</li></a>
+                    <a href="tel:555-555-5555" target="_blank"><li><i class="fa-solid fa-mobile-screen-button"></i>Call me</li></a>
+                </ul>
+            </div>
         </div>
         <hr>
-        <div id="copyright">
+        <div class="copyright">
             <p class="notice">**This is just a fake portfolio. All the projects and contact details given are not real.</p>
             <a href="https://www.freecodecamp.com/"><p>© Created for freeCodeCamp<i class=" small-i fab fa-free-code-camp"></i></p></a>
         </div>
